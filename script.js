@@ -5,6 +5,7 @@ let scoreboard = {
     ties: localStorage.getItem('ties') ? parseInt(localStorage.getItem('ties')) : 0
 };
 
+// Function to play the game
 function playGame(userChoice) {
     const choices = ['rock', 'paper', 'scissors'];
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -14,6 +15,7 @@ function playGame(userChoice) {
     displayScoreboard();
 }
 
+// Function to determine the winner
 function determineWinner(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         return "It's a tie!";
@@ -29,6 +31,7 @@ function determineWinner(userChoice, computerChoice) {
     }
 }
 
+// Function to update the scoreboard
 function updateScoreboard(result) {
     if (result === "You win!") {
         scoreboard.wins++;
@@ -42,10 +45,12 @@ function updateScoreboard(result) {
     localStorage.setItem('ties', scoreboard.ties);
 }
 
+// Function to display the scoreboard
 function displayScoreboard() {
     document.getElementById('scoreboard').innerText = `Wins: ${scoreboard.wins}, Losses: ${scoreboard.losses}, Ties: ${scoreboard.ties}`;
 }
 
+// Function to reset the scoreboard
 function resetScoreboard() {
     scoreboard.wins = 0;
     scoreboard.losses = 0;

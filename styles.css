@@ -1,3 +1,4 @@
+/* Style for the body element */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -7,11 +8,13 @@ body {
     margin-top: 50px;
 }
 
+/* Style for the main heading */
 h1 {
     color: #333;
     margin-top: 50px;
 }
 
+/* Style for the choices container */
 .choices {
     margin: 20px 0;
     display: flex;
@@ -19,6 +22,7 @@ h1 {
     gap: 20px;
 }
 
+/* Style for the buttons */
 button {
     padding: 10px 20px;
     margin: 0 10px;
@@ -26,22 +30,26 @@ button {
     cursor: pointer;
 }
 
+/* Style for the choice buttons */
 .choices button {
     background: none;
     border: none;
     cursor: pointer;
 }
 
+/* Style for the images inside the choice buttons */
 .choices img {
     width: 100px;
     height: 100px;
     transition: transform 0.2s;
 }
 
+/* Hover effect for the images */
 .choices img:hover {
     transform: scale(1.1);
 }
 
+/* Style for the result display */
 .result {
     margin-top: 20px;
     font-size: 20px;
