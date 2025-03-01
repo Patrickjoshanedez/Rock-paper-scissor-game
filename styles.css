@@ -4,6 +4,7 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    margin-top: 50px;
 }
 
 h1 {
@@ -13,6 +14,9 @@ h1 {
 
 .choices {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 button {
@@ -20,6 +24,22 @@ button {
     margin: 0 10px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.choices button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.choices img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+}
+
+.choices img:hover {
+    transform: scale(1.1);
 }
 
 .result {
